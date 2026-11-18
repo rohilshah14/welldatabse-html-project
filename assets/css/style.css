@@ -219,7 +219,7 @@ input:-ms-input-placeholder {
 .container {
   max-width: 1440px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 35px;
   margin: 0 auto;
 }
 .container.container-lg {
@@ -227,13 +227,13 @@ input:-ms-input-placeholder {
 }
 .h1,
 h1 {
-  font-size: 120px;
-  line-height: 1;
-  font-family: var(--font-family);
-  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
   margin: 0px;
-  color: var(--primary-color);
-  letter-spacing: 2px;
+  color: var(--white-color);
+  letter-spacing: -1%;
   text-transform: uppercase;
 }
 .h2,
@@ -261,12 +261,12 @@ h3 {
 
 .p,
 p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.3;
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 500;
   margin: 0px;
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 .btn {
   padding: 14px 18px;
@@ -291,8 +291,8 @@ p {
 
 /* header start */
 .header-wrap header {
-  position: fixed;
-  width: 100%;
+  /* position: fixed;
+  width: 100%; */
   z-index: 100;
 }
 .header-wrap {
@@ -424,4 +424,56 @@ p {
 
 .header-toggle.active span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+/* banner start */
+.banner-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner-img img {
+  border-radius: 18px 18px 0 0;
+  width: 100%;
+  height: 100%;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  z-index: 1111;
+  text-align: center;
+}
+.banner-content p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.banner-content .btn-grp {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.banner-wrap .banner {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding-top: 54px;
+  z-index: 11;
+  position: relative;
+}
+.banner:after {
+  background: linear-gradient(90deg, #f25f29 0%, #0654f2 100%);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner-video {
+  text-align: center;
+  position: relative;
+  z-index: 111;
 }
