@@ -429,16 +429,17 @@ p {
 /* banner start */
 .banner-img {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  z-index: 1;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(90deg, #f25f29 0%, #0654f2 100%);
 }
 .banner-img img {
   border-radius: 18px 18px 0 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  mask-image: linear-gradient(to bottom, transparent 30%, #000 80%);
 }
 .banner-content {
   display: flex;
@@ -465,16 +466,30 @@ p {
   padding-top: 54px;
   z-index: 11;
   position: relative;
-}
-.banner-img {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: 18px 18px 0 0;
-  background: linear-gradient(90deg, #f25f29 0%, #0654f2 100%);
+  overflow: hidden;
 }
 .banner-video {
   text-align: center;
   position: relative;
   z-index: 2;
+}
+.clip-img {
+  position: absolute;
+  width: 75px;
+  height: 353px;
+  z-index: 10;
+  background-image: url("../images/paper-rip-2.png");
+  background-repeat: no-repeat;
+  background-origin: content;
+}
+.clip-img.clip-left {
+  left: 0;
+  top: 0;
+}
+.clip-img.clip-right {
+  right: 0;
+  bottom: -118px;
+  transform: rotate(180deg);
+  width: 77px;
+  height: 363px;
 }

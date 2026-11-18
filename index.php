@@ -26,6 +26,8 @@
                 <div class="banner-video">
                     <img src="./assets/images/banner-video.png" width="980" height="534" alt="banner-video-image" />
                 </div>
+                <div class="clip-img clip-left"></div>
+                <div class="clip-img clip-right"></div>
             </div>
         </div>
     </div>
