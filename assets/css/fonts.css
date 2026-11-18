@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Articulat CF";
+  src: url("../fonts/ArticulatCF-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("../fonts/ArticulatCF-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("../fonts/ArticulatCF-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("../fonts/ArticulatCF-DemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("../fonts/ArticulatCF-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanson";
+  src:
+    url("../fonts/HansonBold.woff2") format("woff2"),
+    url("../fonts/HansonBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
