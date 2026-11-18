@@ -284,11 +284,9 @@ p {
   background-color: var(--orange-color);
   color: var(--white-color);
 }
-
 .no-scroll {
   overflow: hidden;
 }
-
 /* header start */
 .header-wrap header {
   position: fixed;
