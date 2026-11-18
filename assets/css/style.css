@@ -431,11 +431,9 @@ p {
   position: absolute;
   inset: 0;
   z-index: 1;
-  border-radius: 18px 18px 0 0;
   background: linear-gradient(90deg, #f25f29 0%, #0654f2 100%);
 }
 .banner-img img {
-  border-radius: 18px 18px 0 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -459,6 +457,20 @@ p {
   justify-content: center;
   gap: 12px;
 }
+.banner-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.banner-wrap:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white-color) url(../images/grid-pattern-light.svg) repeat;
+  width: 100%;
+  height: 160px;
+}
 .banner-wrap .banner {
   display: flex;
   flex-direction: column;
@@ -466,7 +478,7 @@ p {
   padding-top: 54px;
   z-index: 11;
   position: relative;
-  overflow: hidden;
+  border-radius: 18px 18px 0 0;
 }
 .banner-video {
   text-align: center;
